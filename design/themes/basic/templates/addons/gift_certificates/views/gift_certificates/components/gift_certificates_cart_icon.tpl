@@ -1,0 +1,2 @@
+{assign var="icon_image_path" value="`$images_dir`/icons/gift_certificates_cart_icon.png"|fn_generate_thumbnail:$width:$height:false}
+<img src="{$icon_image_path}" {if $width}width="{$width}"{/if} {if $height}height="{$height}"{/if} alt="{__("gift_certificate")}" title="{__("gift_certificate")}" {if $class}class="{$class}"{/if}/>
